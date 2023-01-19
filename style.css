@@ -1,0 +1,55 @@
+body {
+    background-image: url("https://thumbs.dreamstime.com/b/sfondo-interno-del-locale-palestra-o-nel-centro-di-fitness-equipaggiamenti-completi-attrezzature-e-macchine-per-la-costruzione-164177900.jpg");
+}
+
+.card-title {
+    background-color: #575A5E !important;
+}
+
+.card-background {
+    background-color: #F4F7F5;
+}
+
+.without-border {
+    border: none !important;
+}
+
+#bottone:hover {
+    background-color: #293133 !important;
+}
+
+.button {
+    text-align: center;
+}
+
+.opacity {
+    opacity: 90%;
+}
+
+.white-text {
+    color: white !important;
+}
+
+.grey {
+    background-color: #525458 !important;
+}
+
+a {
+    color: white;
+}
+
+.navbar-color {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    opacity: 100% !important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.footer {
+    /* position: absolute; */
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
