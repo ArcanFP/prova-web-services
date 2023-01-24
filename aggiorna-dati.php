@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("mysql.next-data.net", "www_13237", "uBaKfYFM", "www_wpschool_it");
+$conn = mysqli_connect(/*inserire database*/);
 //Check Connection
 if ($conn === false) {
 	die("ERROR: Could not connect. " . mysqli_connect_error());
