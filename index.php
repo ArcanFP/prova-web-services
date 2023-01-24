@@ -39,7 +39,7 @@ require_once('protect-this.php');
             <a class="navbar-brand" href="./index.php">
                 <img src="./logo.png" alt="" width="50" height="50">
             </a>
-            <a class="navbar-brand bold" href="./index.php">Trimons Gym</a>
+            <a class="navbar-brand bold" href="./index.php">Test Gym</a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
                     <a class="nav-link bold" href="./index.php">Iscriviti <span class="sr-only">(current)</span></a>

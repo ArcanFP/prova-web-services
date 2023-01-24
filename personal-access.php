@@ -5,9 +5,9 @@ if ($conn === false) {
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 if ($_POST["ntessera"] != NULL) {
-    $sql = "select * from trimonsgym where ntessera = " . $_POST["ntessera"];
+    $sql = "select * from testgym where ntessera = " . $_POST["ntessera"];
 } else {
-    $sql = "select * from trimonsgym where email LIKE '" . $_POST["email"] . "'";
+    $sql = "select * from testgym where email LIKE '" . $_POST["email"] . "'";
 }
 $result = ($conn->query($sql));
 //declare array to store the data of database
@@ -45,7 +45,7 @@ if ($result->num_rows > 0) {
             <a class="navbar-brand" href="./index.php">
                 <img src="./logo.png" alt="" width="50" height="50">
             </a>
-            <a class="navbar-brand bold" href="./index.php">Trimons Gym</a>
+            <a class="navbar-brand bold" href="./index.php">Test Gym</a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
                     <a class="nav-link bold" href="./index.php">Iscriviti <span class="sr-only">(current)</span></a>
@@ -101,7 +101,7 @@ if ($result->num_rows > 0) {
             <div class="card-footer">
                 <p>Grazie per esserti iscritto alla nostra palestra</p>
                 <p>Se hai delle domande puoi contattarci qui:</p>
-                <p>trimonsgym@trimonsgym.trimonsgym</p>
+                <p>testgym@testgym.testgym</p>
             </div>
         </div>
     </div>

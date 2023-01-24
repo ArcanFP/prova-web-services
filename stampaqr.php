@@ -28,7 +28,7 @@ include('./phpqrcode/qrlib.php');
 		$.ajax(
 		{
 			type: "POST",
-			url: "https://wpschool.it/palestre/Trimons-Gym/generaqrcode.php",
+			url: "https://wpschool.it/palestre/test-gym/elenco.php",
 			data: parametri,
 			cache:false,
 			success: function (risultato)

@@ -10,7 +10,7 @@ if ($conn === false) {
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 
-$sql = "SELECT * FROM trimonsgym WHERE id=" . $_POST["id"];
+$sql = "SELECT * FROM testgym WHERE id=" . $_POST["id"];
 $result = ($conn->query($sql));
 $rows = [];
 
@@ -56,7 +56,7 @@ if ($result->num_rows > 0) {
             <a class="navbar-brand" href="./index.php">
                 <img src="./logo.png" alt="" width="50" height="50">
             </a>
-            <a class="navbar-brand bold" href="./index.php">Trimons Gym</a>
+            <a class="navbar-brand bold" href="./index.php">Test Gym</a>
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item">
                     <a class="nav-link bold" href="./index.php">Iscriviti <span class="sr-only">(current)</span></a>

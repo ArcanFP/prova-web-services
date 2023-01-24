@@ -11,10 +11,10 @@ $genere = $_POST["gender"];
 $email = $_POST["email"];
 $numeroTessera = $_POST["ntessera"];
 
-$sql = "UPDATE trimonsgym SET nome = '" . $nome . "', cognome = '" . $cognome . "', genere = '" . $genere . "', email = '" . $email . "' WHERE ntessera = " . $numeroTessera . ";";
+$sql = "UPDATE testgym SET nome = '" . $nome . "', cognome = '" . $cognome . "', genere = '" . $genere . "', email = '" . $email . "' WHERE ntessera = " . $numeroTessera . ";";
 if ($conn->query($sql) === TRUE) {
   echo "L'utente è stato aggiornato correttamente";
-  header("refresh:3;url=http://wpschool.it/palestre/Trimons-Gym/elenco.php");
+  header("refresh:3;url=https://wpschool.it/palestre/test-gym/elenco.php");
 } else {
   echo "Errore: " . $conn->error;
 }

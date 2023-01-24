@@ -1,6 +1,6 @@
 <?php
     /* Your password */
-    $password = 'Nonlasanessuno';
+    $password = 'password';
 
     /* Redirects here after login */
     $redirect_after_login = 'index.php';

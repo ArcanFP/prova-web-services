@@ -5,7 +5,7 @@ if ($conn === false) {
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 
-$sql = "select * from trimonsgym where ntessera = " . $_POST["ntessera"];
+$sql = "select * from testgym where ntessera = " . $_POST["ntessera"];
 $result = ($conn->query($sql));
 //declare array to store the data of database
 $rows = [];
@@ -22,7 +22,7 @@ if ($rows[0]["accessi"] == 0) {
     $finiti = true;
     $new_accessi = $rows[0]["accessi"] - 1;
 
-    $sql = "UPDATE trimonsgym SET accessi = " . $new_accessi . " WHERE ntessera = " . $_POST["ntessera"];
+    $sql = "UPDATE testgym SET accessi = " . $new_accessi . " WHERE ntessera = " . $_POST["ntessera"];
     $verifica = false;
     if ($conn->query($sql) === TRUE) {
         $verifica = true;
@@ -30,7 +30,7 @@ if ($rows[0]["accessi"] == 0) {
         $verifica = $conn->error;
     }
 
-    $sql = "select * from trimonsgym where ntessera = " . $_POST["ntessera"];
+    $sql = "select * from testgym where ntessera = " . $_POST["ntessera"];
     $result = ($conn->query($sql));
     //declare array to store the data of database
     $rows = [];
@@ -130,7 +130,7 @@ if ($rows[0]["accessi"] == 0) {
     <div class="card-footer">
         <p>Grazie per esserti iscritto alla nostra palestra</p>
         <p>Se hai delle domande puoi contattarci qui:</p>
-        <p>trimonsgym@trimonsgym.trimonsgym</p>
+        <p>testgym@testgym.tv</p>
     </div>
         </div>
     </div>
